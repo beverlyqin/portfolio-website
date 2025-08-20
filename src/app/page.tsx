@@ -1,5 +1,5 @@
  
-
+import Image from 'next/image';
 export default function Home() {
   return (
     <main className="min-h-screen bg-white">
@@ -13,9 +13,9 @@ export default function Home() {
             <h2 className="text-4xl font-bold text-black mb-6">
               Hi, I'm Beverly
             </h2>
-            <div className="space-y-10 text-base leading-relaxed text-gray-800">
+            <div className="space-y-10 text-base leading-relaxed text-gray-600">
               
-              <p className="text-xl md:text-xl">
+              <p className="text-xl md:text-xl font-semibold">
               Passionate about building systems in both physical and digital spaces to enable new forms of interaction, perception, and creativity.
               </p>
             </div>
@@ -23,12 +23,8 @@ export default function Home() {
           
           {/* Right Side - Image Holder */}
           <div className="flex justify-center lg:justify-end">
-            <div className="w-80 h-96 bg-gray-100 border-2 border-dashed border-gray-300 flex items-center justify-center">
-              <div className="text-center text-gray-500">
-                <div className="text-4xl mb-2">📷</div>
-                <p className="text-sm">Photo Upload</p>
-                <p className="text-xs mt-1">Click to add your photo</p>
-              </div>
+            <div className="w-80 h-96 bg-gray-100 relative overflow-hidden">
+              <Image src="/photo.jpg" alt="Beverly Qin" fill className="object-cover scale-140" priority />
             </div>
           </div>
         </div>

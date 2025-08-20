@@ -11,7 +11,7 @@ export default function Header() {
     <header className="pt-36 pb-12">
       <div className="text-center">
         <Link href="/" className="inline-block">
-          <h1 className="text-3xl font-bold tracking-wider text-black mb-12">
+          <h1 className="text-3xl font-extrabold tracking-wider text-black mb-12">
             <span className="block">BEVERLY</span>
             <span className="block mt-2">QIN</span>
           </h1>

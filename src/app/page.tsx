@@ -6,26 +6,24 @@ export default function Home() {
       
 
       {/* Introduction Section */}
-      <section className="max-w-6xl mx-auto px-8 mb-20">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+      <section className="max-w-6xl mx-auto px-8 mb-20 -mt-8">
+        <div className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-4 items-start">
           {/* Left Side - Introduction Text */}
-          <div className="space-y-6">
-            <h2 className="text-3xl font-bold text-black mb-6">
-              Introduction
+          <div className="space-y-6 self-center">
+            <h2 className="text-4xl font-bold text-black mb-6">
+              Hi, I'm Beverly
             </h2>
-            <div className="space-y-4 text-base leading-relaxed text-gray-800">
-              <p>
-                I’m a Master’s student in Computer Science at Columbia University with a background in Architecture from Pratt Institute. 
-              </p>
-              <p>
-                I’m passionate about building systems in both physical and digital spaces to enable new forms of interaction, perception, and creativity.
+            <div className="space-y-10 text-base leading-relaxed text-gray-800">
+              
+              <p className="text-xl md:text-xl">
+              Passionate about building systems in both physical and digital spaces to enable new forms of interaction, perception, and creativity.
               </p>
             </div>
           </div>
           
           {/* Right Side - Image Holder */}
           <div className="flex justify-center lg:justify-end">
-            <div className="w-80 h-96 bg-gray-100 border-2 border-dashed border-gray-300 rounded-lg flex items-center justify-center">
+            <div className="w-80 h-96 bg-gray-100 border-2 border-dashed border-gray-300 flex items-center justify-center">
               <div className="text-center text-gray-500">
                 <div className="text-4xl mb-2">📷</div>
                 <p className="text-sm">Photo Upload</p>

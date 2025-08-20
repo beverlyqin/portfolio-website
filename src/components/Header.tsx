@@ -8,7 +8,7 @@ export default function Header() {
   const isActive = (href: string) => pathname === href || pathname.startsWith(href + "/");
 
   return (
-    <header className="pt-40 pb-12">
+    <header className="pt-36 pb-12">
       <div className="text-center">
         <Link href="/" className="inline-block">
           <h1 className="text-3xl font-bold tracking-wider text-black mb-12">

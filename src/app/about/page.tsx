@@ -1,40 +1,9 @@
-import Link from 'next/link';
+ 
 
 export default function About() {
   return (
     <main className="min-h-screen bg-white">
-      {/* Header Section */}
-      <header className="pt-44 pb-12">
-        <div className="text-center">
-          <Link href="/" className="inline-block">
-            <h1 className="text-5xl font-bold tracking-wider text-black mb-8">
-              BEVERLY QIN
-            </h1>
-          </Link>
-          
-          {/* Navigation Tabs */}
-          <nav className="flex justify-center space-x-16 mb-16">
-            <Link 
-              href="/computation" 
-              className="text-lg font-light text-black hover:text-gray-600 transition-colors duration-200"
-            >
-              COMPUTATION
-            </Link>
-            <Link 
-              href="/architecture" 
-              className="text-lg font-light text-black hover:text-gray-600 transition-colors duration-200"
-            >
-              ARCHITECTURE
-            </Link>
-            <Link 
-              href="/about" 
-              className="text-lg font-light text-black border-b-2 border-black pb-1"
-            >
-              ABOUT
-            </Link>
-          </nav>
-        </div>
-      </header>
+      
 
       {/* Content Section */}
       <section className="max-w-4xl mx-auto px-8 pb-20">

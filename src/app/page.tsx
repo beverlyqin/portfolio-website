@@ -13,7 +13,7 @@ export default function Home() {
             <h2 className="text-3xl font-bold text-black mb-6">
               Introduction
             </h2>
-            <div className="space-y-4 text-lg leading-relaxed text-gray-800">
+            <div className="space-y-4 text-base leading-relaxed text-gray-800">
               <p>
                 I’m a Master’s student in Computer Science at Columbia University with a background in Architecture from Pratt Institute. 
               </p>

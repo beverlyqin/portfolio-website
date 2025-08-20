@@ -7,7 +7,7 @@ export default function About() {
       <header className="pt-44 pb-12">
         <div className="text-center">
           <Link href="/" className="inline-block">
-            <h1 className="text-6xl font-bold tracking-wider text-black mb-8">
+            <h1 className="text-5xl font-bold tracking-wider text-black mb-8">
               BEVERLY QIN
             </h1>
           </Link>

@@ -17,7 +17,7 @@ export default function Header() {
           </h1>
         </Link>
 
-        <nav className="flex justify-center space-x-16 mb-16">
+        <nav className="flex justify-center space-x-24 mb-16">
           <Link
             href="/"
             className={

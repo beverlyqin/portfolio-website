@@ -2,6 +2,7 @@
 import Image from 'next/image';
 import { projects } from '@/data/projects';
 import ProjectCard from '@/components/ProjectCard';
+import BackToTop from '@/components/BackToTop';
 
 export default function Home() {
   return (
@@ -44,6 +45,8 @@ export default function Home() {
           ))}
         </div>
       </section>
+      
+      <BackToTop />
     </main>
   );
 }

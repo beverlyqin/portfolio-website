@@ -1,11 +1,13 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import ProjectMetadata from '@/components/ProjectMetadata';
+import ProjectNavigation from '@/components/ProjectNavigation';
+import BackToTop from '@/components/BackToTop';
 
 export default function CrowdDispersalPage() {
   return (
-    <div className="min-h-screen bg-gwhite py-12">
-      <div className="max-w-4xl mx-auto px-6">
+    <div className="min-h-screen bg-white">
+      <div className="max-w-4xl mx-auto px-6 py-12">
         {/* Back Button */}
         <Link 
           href="/" 
@@ -263,6 +265,11 @@ for(int i=0;i<count;i++){
           </div>
         </div>
       </div>
+      
+      {/* Project Navigation */}
+      <ProjectNavigation currentProjectId="crowd-dispersal" />
+      
+      <BackToTop />
     </div>
   );
 }

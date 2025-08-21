@@ -14,7 +14,7 @@ export const projects: Project[] = [
     description: "A reflection data pipeline designed to surface learning patterns, deliver personalized feedback, and guide preparation strategies",
     tags: ["React", "REST APIs", "TypeScript", "TanStack Query", "Gemini 2.5 Flash API"],
     imagePlaceholder: "Project Image",
-    imageSrc: "/test-prep-platform.png"
+    imageSrc: "/mistake.png"
   },
   {
     id: "algorithmic-weaving",

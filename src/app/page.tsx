@@ -8,7 +8,7 @@ export default function Home() {
     <main className="min-h-screen bg-white">
       
       {/* Introduction Section */}
-      <section className="max-w-6xl mx-auto px-8 mb-20 -mt-8">
+      <section className="max-w-6xl mx-auto px-8 mb-20 -mt-16">
         <div className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-4 items-start">
           {/* Left Side - Introduction Text */}
           <div className="space-y-6 self-center">
@@ -26,7 +26,7 @@ export default function Home() {
           {/* Right Side - Image Holder */}
           <div className="flex justify-center lg:justify-end">
             <div className="w-80 h-96 bg-gray-100 relative overflow-hidden">
-              <Image src="/photo.jpg" alt="Beverly Qin" fill className="object-cover scale-140" priority />
+              <Image src="/photo2.jpg" alt="Beverly Qin" fill className="object-cover scale-100" priority />
             </div>
           </div>
         </div>

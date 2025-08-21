@@ -23,12 +23,30 @@ export default function TestPrepPlatformPage() {
           <div className="w-full h-px bg-gray-300 mb-8"></div>
           
                     {/* Project Metadata */}
-          <ProjectMetadata
-            myRole="Designer, Developer"
-            year="2024"
-            contribution="Research, Design, Development"
-            tools="React, TypeScript, TanStack Query"
-          />
+          <div className="bg-white p-6 rounded-lg">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="space-y-4">
+                <div>
+                  <span className="text-gray-500 text-sm font-medium">my role</span>
+                  <p className="text-gray-900 font-medium">Software Engineer Intern</p>
+                </div>
+                <div>
+                  <span className="text-gray-500 text-sm font-medium">year</span>
+                  <p className="text-gray-900 font-medium">2025</p>
+                </div>
+                <div>
+                  <span className="text-gray-500 text-sm font-medium">contribution</span>
+                  <p className="text-gray-900 font-medium">Research, Design, Development</p>
+                </div>
+              </div>
+              <div className="space-y-4">
+                <div>
+                  <span className="text-gray-500 text-sm font-medium">tools</span>
+                  <p className="text-gray-900 font-medium">React, TypeScript, TanStack Query</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Project Image */}
@@ -36,7 +54,7 @@ export default function TestPrepPlatformPage() {
           <h2 className="text-xl font-semibold text-gray-900 mb-4">Project Media</h2>
           <div className="w-full h-96 bg-gray-100 relative overflow-hidden">
             <Image 
-              src="/test-prep-platform.png" 
+              src="/mistake.png" 
               alt="Test Prep Platform" 
               fill 
               className="object-cover" 
@@ -47,9 +65,12 @@ export default function TestPrepPlatformPage() {
         {/* Project Details */}
         <div className="bg-white p-8 mb-8">
           <h2 className="text-xl font-semibold text-gray-900 mb-4">Project Details</h2>
-          <div className="prose prose-gray max-w-none">
+                    <div className="prose prose-gray max-w-none">
             <p className="text-gray-600">
-              [Add your specific project details here. This page can be customized with content specific to the test prep platform project.]
+             Worked as a Software Engineer Intern on Mistake Note, an AI-powered web platform designed to help students reflect on mistakes and improve standardized test preparation. My work focused on building both the intelligent insight engine and the frontend experience that supported reflection workflows, analytics, and data-driven improvements.
+            </p>
+            <p className="text-gray-600 mt-4 text-sm">
+              Note: Code is private on the company's GitHub
             </p>
           </div>
         </div>

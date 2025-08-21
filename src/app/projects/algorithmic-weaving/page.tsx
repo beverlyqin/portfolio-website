@@ -4,7 +4,8 @@ import ProjectMetadata from '@/components/ProjectMetadata';
 
 export default function AlgorithmicWeavingPage() {
   return (
-    <div className="min-h-screen bg-white py-12">
+    <div className="min-h-screen bg-white
+     py-12">
       <div className="max-w-4xl mx-auto px-6">
         {/* Back Button */}
         <Link 
@@ -19,7 +20,7 @@ export default function AlgorithmicWeavingPage() {
 
         {/* Project Header */}
         <div className="bg-white p-8 mb-8">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">Robotic Arm Image Fabrication</h1>
+          <h1 className="text-4xl font-bold text-gray-900 mb-4">Robotic Arm Image Fabrication with Langton’s Ant</h1>
           <div className="w-full h-px bg-gray-300 mb-8"></div>
           
                     {/* Project Metadata */}
@@ -50,8 +51,81 @@ export default function AlgorithmicWeavingPage() {
           <h2 className="text-xl font-semibold text-gray-900 mb-4">Project Details</h2>
           <div className="prose prose-gray max-w-none">
             <p className="text-gray-600">
-              [Add your specific project details here. This page can be customized with content specific to the algorithmic weaving project.]
+            Designed and programmed a robotic arm system capable of fabricating images using thread, inspired by agent-based simulation models such as Langton's Ant and Conway's Game of Life. The project explored how simple algorithmic rules can generate complex emergent patterns, and how these rules can be physically embodied in robotic fabrication.
             </p>
+          </div>
+        </div>
+
+        {/* Image Gallery */}
+        <div className="bg-white p-8 mb-8">
+          <h2 className="text-xl font-semibold text-gray-900 mb-6">Project Gallery</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {/* Image Holder 4 */}
+            <div className="w-full h-72 bg-gray-100 relative overflow-hidden">
+              <Image 
+                src="/weave1.jpg" 
+                alt="Weave 1" 
+                fill 
+                className="object-cover" 
+              />
+            </div>
+
+            {/* Video Holder 1 */}
+            <div className="w-full h-72 bg-gray-100 relative overflow-hidden">
+              <video 
+                className="w-full h-full object-cover"
+                controls
+                preload="metadata"
+                poster="/weave1.jpg"
+              >
+                <source src="/weave6.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+
+            {/* Image Holder 5 */}
+            <div className="w-full h-72 bg-gray-100 relative overflow-hidden">
+              <Image 
+                src="/weave3.png" 
+                alt="Weave 3" 
+                fill 
+                className="object-cover" 
+              />
+            </div>
+
+            {/* Video Holder 2 */}
+            <div className="w-full h-72 bg-gray-100 relative overflow-hidden">
+              <video 
+                className="w-full h-full object-cover"
+                controls
+                preload="metadata"
+              >
+                <source src="/weave3.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+
+            {/* Image Holder 6 */}
+            <div className="w-full h-72 bg-gray-100 relative overflow-hidden">
+              <Image 
+                src="/weave4.jpg" 
+                alt="Weave 4" 
+                fill 
+                className="object-cover" 
+              />
+            </div>
+
+            {/* Video Holder 3 */}
+            <div className="w-full h-72 bg-gray-100 relative overflow-hidden">
+              <video 
+                className="w-full h-full object-cover"
+                controls
+                preload="metadata"
+              >
+                <source src="/weave.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
           </div>
         </div>
       </div>

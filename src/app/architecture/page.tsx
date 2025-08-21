@@ -1,55 +1,57 @@
- 
+import ArchitectureProjectCard from '@/components/ArchitectureProjectCard';
+
+// Placeholder architecture projects
+const architectureProjects = [
+  {
+    id: "arch-project-1",
+    title: "SaltBound Nomad",
+    description: "The project proposes a nomadic desalination infrastructure that restores shorelines with salt. ",
+    imageSrc: "/salt.jpg",
+    imagePlaceholder: "SaltBound Nomad",
+    tags: ["Rhino", "Grasshopper", "Blender", "Adobe Illustrator", "Adobe Photoshop"]
+  },
+  {
+    id: "arch-project-3",
+    title: "Specular Field",
+    description: "Lower East Side museum uses glass, reflection, and metal to stitch neighborhood history into the streetscape. ",
+    imageSrc: "/glasses.png",
+    imagePlaceholder: "Architecture Project 4",
+    tags: ["Rhino", "Vray",, "Adobe Illustrator", "Enscape"]
+  },
+  {
+    id: "arch-project-2", 
+    title: "INSIDE-OUT",
+    description: "The project consists of a community center that also functions as an emergency shelter in the event of extreme weather conditions.",
+    imageSrc: "/metal.png",
+    imagePlaceholder: "Architecture Project 2",
+    tags: ["Rhino", "Enscape", "Adobe Illustrator", "Adobe Photoshop"]
+  },
+  {
+    id: "arch-project-4",
+    title: "Airflow Alchemy", 
+    description: "A retirement home conceived as a sequence of microclimates, using orientation and curved surfaces to steer wind, tune sun and ventilation.",
+    imageSrc: "/air.jpg",
+    imagePlaceholder: "Architecture Project 3",
+    tags: ["Rhino", "Enscape", "Adobe Illustrator", "Adobe Photoshop"]
+  }
+];
 
 export default function Architecture() {
   return (
     <main className="min-h-screen bg-white">
       
-
-      {/* Content Section */}
-      <section className="max-w-4xl mx-auto px-8 pb-20">
-        <h2 className="text-4xl font-bold text-black mb-8 text-center">
-          Architecture
-        </h2>
+      {/* Projects Section */}
+      <section className="max-w-6xl mx-auto px-8 pb-20">
         
-        <div className="space-y-8">
-          <div className="bg-white border border-gray-200 rounded-lg p-8">
-            <h3 className="text-2xl font-semibold text-black mb-4">
-              System Design Patterns
-            </h3>
-            <p className="text-gray-700 leading-relaxed mb-4">
-              Implementation of scalable software architecture patterns including microservices, 
-              event-driven architecture, and distributed systems design principles.
-            </p>
-            <div className="w-full h-64 bg-gray-100 rounded-lg flex items-center justify-center">
-              <span className="text-gray-400">System Architecture Diagram</span>
-            </div>
-          </div>
-
-          <div className="bg-white border border-gray-200 rounded-lg p-8">
-            <h3 className="text-2xl font-semibold text-black mb-4">
-              Database Architecture
-            </h3>
-            <p className="text-gray-700 leading-relaxed mb-4">
-              Design and optimization of database schemas, query performance, and data modeling 
-              for high-throughput applications and complex data relationships.
-            </p>
-            <div className="w-full h-64 bg-gray-100 rounded-lg flex items-center justify-center">
-              <span className="text-gray-400">Database Schema Design</span>
-            </div>
-          </div>
-
-          <div className="bg-white border border-gray-200 rounded-lg p-8">
-            <h3 className="text-2xl font-semibold text-black mb-4">
-              Cloud Infrastructure
-            </h3>
-            <p className="text-gray-700 leading-relaxed mb-4">
-              Deployment and management of cloud-native applications using containerization, 
-              orchestration, and infrastructure-as-code practices.
-            </p>
-            <div className="w-full h-64 bg-gray-100 rounded-lg flex items-center justify-center">
-              <span className="text-gray-400">Cloud Infrastructure Map</span>
-            </div>
-          </div>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {architectureProjects.map((project) => (
+            <ArchitectureProjectCard 
+              key={project.id} 
+              project={project} 
+              imageZoom={project.id === "arch-project-4" ? 1.2 : 1}
+            />
+          ))}
         </div>
       </section>
     </main>

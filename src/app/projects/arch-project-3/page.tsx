@@ -1,32 +1,11 @@
 'use client';
 
 import Link from 'next/link';
-import { useState } from 'react';
 import ProjectMetadata from '@/components/ProjectMetadata';
 import ProjectNavigation from '@/components/ProjectNavigation';
 import BackToTop from '@/components/BackToTop';
 
-export default function SpecularFieldPage() {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  
-  const images = [
-    { src: '/glasses.png', alt: 'Specular Field - Main View' },
-    { src: '/glasses.png', alt: 'Specular Field - Detail View' },
-    { src: '/glasses.png', alt: 'Specular Field - Interior Perspective' }
-  ];
-
-  const nextImage = () => {
-    setCurrentImageIndex((prev) => (prev + 1) % images.length);
-  };
-
-  const prevImage = () => {
-    setCurrentImageIndex((prev) => (prev - 1 + images.length) % images.length);
-  };
-
-  const goToImage = (index: number) => {
-    setCurrentImageIndex(index);
-  };
-
+export default function GlassPage() {
   return (
     <div className="min-h-screen bg-white">
       <div className="max-w-4xl mx-auto px-6 py-12">

@@ -1,32 +1,11 @@
 'use client';
 
 import Link from 'next/link';
-import { useState } from 'react';
 import ProjectMetadata from '@/components/ProjectMetadata';
 import ProjectNavigation from '@/components/ProjectNavigation';
 import BackToTop from '@/components/BackToTop';
 
 export default function InsideOutPage() {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  
-  const images = [
-    { src: '/metal.png', alt: 'INSIDE-OUT - Main View' },
-    { src: '/metal.png', alt: 'INSIDE-OUT - Detail View' },
-    { src: '/metal.png', alt: 'INSIDE-OUT - Emergency Mode' }
-  ];
-
-  const nextImage = () => {
-    setCurrentImageIndex((prev) => (prev + 1) % images.length);
-  };
-
-  const prevImage = () => {
-    setCurrentImageIndex((prev) => (prev - 1 + images.length) % images.length);
-  };
-
-  const goToImage = (index: number) => {
-    setCurrentImageIndex(index);
-  };
-
   return (
     <div className="min-h-screen bg-white">
       <div className="max-w-4xl mx-auto px-6 py-12">

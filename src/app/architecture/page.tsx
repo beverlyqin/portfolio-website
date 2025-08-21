@@ -16,7 +16,7 @@ const architectureProjects = [
     description: "Lower East Side museum uses glass, reflection, and metal to stitch neighborhood history into the streetscape. ",
     imageSrc: "/glasses.png",
     imagePlaceholder: "Architecture Project 4",
-    tags: ["Rhino", "Vray",, "Adobe Illustrator", "Enscape"]
+    tags: ["Rhino", "Vray", "Adobe Illustrator", "Enscape"]
   },
   {
     id: "arch-project-2", 

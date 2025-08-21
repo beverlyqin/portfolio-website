@@ -5,6 +5,7 @@ import { useState } from 'react';
 import ProjectMetadata from '@/components/ProjectMetadata';
 import ProjectNavigation from '@/components/ProjectNavigation';
 import BackToTop from '@/components/BackToTop';
+import Image from 'next/image';
 
 export default function VRSimulationPage() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -61,10 +62,10 @@ export default function VRSimulationPage() {
           <h2 className="text-xl font-semibold text-gray-900 mb-3">Overview</h2>
           <div className="prose prose-gray max-w-none">
             <p className="text-gray-600">
-              This project developed an immersive VR simulation environment in Unreal Engine to visualize and test future autonomous vehicle transit systems. The simulation serves as a strategic tool for Jidu Auto's autonomous vehicle design and urban planning initiatives, enabling stakeholders to experience and evaluate proposed transportation solutions in a realistic virtual environment.
+              This project developed an immersive VR simulation environment in Unreal Engine to visualize and test future autonomous vehicle transit systems. The simulation serves as a strategic tool for Jidu Auto&apos;s autonomous vehicle design and urban planning initiatives, enabling stakeholders to experience and evaluate proposed transportation solutions in a realistic virtual environment.
             </p>
             <p className="text-gray-500 text-sm mt-4 italic">
-              Note: I'm unable to disclose the actual VR environments developed for this project due to company policy, but the summary reflects my role and contributions.
+              Note: I&apos;m unable to disclose the actual VR environments developed for this project due to company policy, but the summary reflects my role and contributions.
             </p>
           </div>
         </div>
@@ -110,7 +111,7 @@ export default function VRSimulationPage() {
               <div className="flex transition-transform duration-300 ease-in-out" style={{ transform: `translateX(-${currentImageIndex * 100}%)` }}>
                 {images.map((image, index) => (
                   <div key={index} className="w-full flex-shrink-0">
-                    <img src={image.src} alt={image.alt} className="w-3/4 h-80 object-cover rounded-lg mx-auto" />
+                    <Image src={image.src} alt={image.alt} width={600} height={320} className="w-3/4 h-80 object-cover rounded-lg mx-auto" />
                   </div>
                 ))}
               </div>
@@ -205,7 +206,7 @@ export default function VRSimulationPage() {
               <div>
                 <h3 className="text-lg font-medium text-gray-900 mb-2">Phase 3: VR Integration</h3>
                 <p className="text-gray-600 text-sm">
-                Implemented immersive VR experiences in Unreal Engine to allow stakeholders to “sit” inside the vehicle or navigate city spaces, evaluating ad exposure and passenger interaction opportunities.
+                Implemented immersive VR experiences in Unreal Engine to allow stakeholders to &ldquo;sit&rdquo; inside the vehicle or navigate city spaces, evaluating ad exposure and passenger interaction opportunities.
                 </p>
               </div>
               

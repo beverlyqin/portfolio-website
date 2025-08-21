@@ -90,7 +90,7 @@ export default function CrowdDispersalPage() {
                <h3 className="text-lg font-medium text-gray-900 mb-3">Example: Boids (Flocking) Mathematical Formulation</h3>
                <div className="prose prose-gray max-w-none">
                  <p className="text-gray-600 mb-4">
-                   We've designed it such that agents attempt to separate, align, and cohere with their neighbors, inspired by algorithms like the one presented by Craig Reynolds in the 1987 paper "Flocks, Herds, and Schools: A Distributed Behavioral Model." For each i, we compute for all j ≠ i within a certain neighbor-radius R<sub>n</sub>:
+                   We&apos;ve designed it such that agents attempt to separate, align, and cohere with their neighbors, inspired by algorithms like the one presented by Craig Reynolds in the 1987 paper &ldquo;Flocks, Herds, and Schools: A Distributed Behavioral Model.&rdquo; For each i, we compute for all j ≠ i within a certain neighbor-radius R<sub>n</sub>:
                  </p>
                  
                  <div className="grid grid-cols-1 md:grid-cols-3 gap-x-4 gap-y-3 mb-4">
@@ -186,8 +186,8 @@ for(int i=0;i<count;i++){
             Our simulation integrates both physics-based and rule-based models:
             </p>
             <div className="space-y-2">
-              <p className="text-gray-600">- Social Repulsion – modified from Helbing's Social Force Model to prevent collisions.</p>
-              <p className="text-gray-600">- Flocking Behaviors – adapted from Reynolds' Boids model for alignment, separation, and cohesion.</p>
+              <p className="text-gray-600">- Social Repulsion – modified from Helbing&apos;s Social Force Model to prevent collisions.</p>
+              <p className="text-gray-600">- Flocking Behaviors – adapted from Reynolds&apos; Boids model for alignment, separation, and cohesion.</p>
               <p className="text-gray-600">- Attraction to POIs – inverse-square forces toward stalls, entrances, and exits.</p>
               <p className="text-gray-600">- Boundary Forces – keep agents within Plaza limits.</p>
               <p className="text-gray-600">- Gaussian Noise – introduce natural randomness and wandering</p>
@@ -206,7 +206,7 @@ for(int i=0;i<count;i++){
                 A principal component analysis graph comparing principal components 1 and 2. PC1 accounts for 37.8% of the total dataset variance, and PC2 accounts for 29.0% of the variance. In total, their 2-dimensional space accounts for 66.8% of the variance observed across all 7 experimental conditions.
               </p>
               <p className="text-gray-600 mb-4 text-left">
-                Each dot represents one specific agent (person) in its respective simulation. The color is defined by the experimental condition where motion algorithms were removed: Boid's Flocking, Family Spawning, Noise, Pedestrian-Pedestrian Repulsion, POI Attraction and Neg POI Repulsion, POI goal, and standard conditions. Each condition has a corresponding statistical ellipse covering a 95% confidence interval.
+                Each dot represents one specific agent (person) in its respective simulation. The color is defined by the experimental condition where motion algorithms were removed: Boid&apos;s Flocking, Family Spawning, Noise, Pedestrian-Pedestrian Repulsion, POI Attraction and Neg POI Repulsion, POI goal, and standard conditions. Each condition has a corresponding statistical ellipse covering a 95% confidence interval.
               </p>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-2 mb-4">
@@ -256,7 +256,7 @@ for(int i=0;i<count;i++){
                     A principal component analysis graph comparing principal components 1 and 2. PC1 accounts for 37.8% of the total dataset variance, and PC2 accounts for 29.0% of the variance. In total, their 2-dimensional space accounts for 66.8% of the variance observed across all 7 experimental conditions.
                   </p>
                   <p className="text-gray-600 mb-4 text-left">
-                    Each dot represents one specific agent (person) in its respective simulation. The color is defined by the experimental condition where motion algorithms were removed: Boid's Flocking, Family Spawning, Noise, Pedestrian-Pedestrian Repulsion, POI Attraction and Neg POI Repulsion, POI goal, and standard conditions. Each condition has a corresponding statistical ellipse covering a 95% confidence interval.
+                    Each dot represents one specific agent (person) in its respective simulation. The color is defined by the experimental condition where motion algorithms were removed: Boid&apos;s Flocking, Family Spawning, Noise, Pedestrian-Pedestrian Repulsion, POI Attraction and Neg POI Repulsion, POI goal, and standard conditions. Each condition has a corresponding statistical ellipse covering a 95% confidence interval.
                   </p>
                 </div>
               </div>

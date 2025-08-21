@@ -1,6 +1,4 @@
-import Link from 'next/link';
 import Image from 'next/image';
-import ProjectMetadata from '@/components/ProjectMetadata';
 
 export default function About() {
   return (
@@ -21,7 +19,7 @@ export default function About() {
         <div className="space-y-8">
           <div className="bg-white p-8 text-center">
             <p className="text-gray-700 leading-relaxed mb-4 text-lg">
-            I'm a Master's student in Computer Science at Columbia University. I design systems that bridge the digital and physical, drawing from my background in architecture and computer science. I'm especially interested in spatial computing, human–AI interaction, and playful simulations
+            I&apos;m a Master&apos;s student in Computer Science at Columbia University. I design systems that bridge the digital and physical, drawing from my background in architecture and computer science. I&apos;m especially interested in spatial computing, human–AI interaction, and playful simulations
             Before shifting into computer science, I studied architecture at Pratt Institute, where I explored how computational design and interactive technologies can reshape built environments and human experiences.
             </p>
             <p className="text-gray-700 leading-relaxed mb-4 text-lg">
@@ -76,9 +74,9 @@ export default function About() {
               Contact
             </h3>
             <p className="text-gray-700 leading-relaxed mb-4">
-              I'm always interested in discussing new opportunities, collaborations, or interesting problems.
+              I&apos;m always interested in discussing new opportunities, collaborations, or interesting problems.
               <br />
-              Feel free to reach out if you'd like to connect.
+              Feel free to reach out if you&apos;d like to connect.
             </p>
             <div className="space-y-3 text-gray-700 flex flex-col items-center">
               <a href="mailto:qinbeverly@gmail.com" className="flex items-center space-x-3 hover:text-gray-900 transition-colors">

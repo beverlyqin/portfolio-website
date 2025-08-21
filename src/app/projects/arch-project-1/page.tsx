@@ -1,32 +1,12 @@
 'use client';
 
 import Link from 'next/link';
-import { useState } from 'react';
+import Image from 'next/image';
 import ProjectMetadata from '@/components/ProjectMetadata';
 import ProjectNavigation from '@/components/ProjectNavigation';
 import BackToTop from '@/components/BackToTop';
 
 export default function SaltBoundNomadPage() {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  
-  const images = [
-    { src: '/salt.jpg', alt: 'SaltBound Nomad - Main View' },
-    { src: '/salt.jpg', alt: 'SaltBound Nomad - Detail View' },
-    { src: '/salt.jpg', alt: 'SaltBound Nomad - Process Diagram' }
-  ];
-
-  const nextImage = () => {
-    setCurrentImageIndex((prev) => (prev + 1) % images.length);
-  };
-
-  const prevImage = () => {
-    setCurrentImageIndex((prev) => (prev - 1 + images.length) % images.length);
-  };
-
-  const goToImage = (index: number) => {
-    setCurrentImageIndex(index);
-  };
-
   return (
     <div className="min-h-screen bg-white">
       <div className="max-w-4xl mx-auto px-6 py-12">
@@ -45,7 +25,7 @@ export default function SaltBoundNomadPage() {
         <div className="bg-white p-8 mb-8">
           <div className="flex items-center gap-4 mb-4">
             <h1 className="text-4xl font-bold text-gray-900">SaltBound Nomad</h1>
-            <img src="/walker.gif" alt="Walker GIF" className="w-16 h-16 object-cover rounded-lg" />
+            <Image src="/walker.gif" alt="Walker GIF" width={64} height={64} className="object-cover rounded-lg" />
           </div>
           <div className="w-full h-px bg-gray-300 mb-8"></div>
           

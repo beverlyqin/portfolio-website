@@ -52,7 +52,7 @@ export default function AlgorithmicWeavingPage() {
           <h2 className="text-xl font-semibold text-gray-900 mb-4">Project Details</h2>
           <div className="prose prose-gray max-w-none">
             <p className="text-gray-600">
-            Designed and programmed a robotic arm system capable of fabricating images using thread, inspired by agent-based simulation models such as Langton's Ant and Conway's Game of Life. The project explored how simple algorithmic rules can generate complex emergent patterns, and how these rules can be physically embodied in robotic fabrication.
+            Designed and programmed a robotic arm system capable of fabricating images using thread, inspired by agent-based simulation models such as Langton&apos;s Ant and Conway&apos;s Game of Life. The project explored how simple algorithmic rules can generate complex emergent patterns, and how these rules can be physically embodied in robotic fabrication.
             </p>
           </div>
         </div>

@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Image from 'next/image';
 import ProjectMetadata from '@/components/ProjectMetadata';
 import ProjectNavigation from '@/components/ProjectNavigation';
 import BackToTop from '@/components/BackToTop';

@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import ProjectMetadata from '@/components/ProjectMetadata';
 import ProjectNavigation from '@/components/ProjectNavigation';
 import BackToTop from '@/components/BackToTop';
 
@@ -72,7 +71,7 @@ export default function TestPrepPlatformPage() {
              Worked as a Software Engineer Intern on Mistake Note, an AI-powered web platform designed to help students reflect on mistakes and improve standardized test preparation. My work focused on building both the intelligent insight engine and the frontend experience that supported reflection workflows, analytics, and data-driven improvements.
             </p>
             <p className="text-gray-600 mt-4 text-sm">
-              Note: Code is private on the company's GitHub
+              Note: Code is private on the company&apos;s GitHub
             </p>
           </div>
         </div>

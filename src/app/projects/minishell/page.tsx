@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Image from 'next/image';
 import ProjectMetadata from '@/components/ProjectMetadata';
 import ProjectNavigation from '@/components/ProjectNavigation';
 import BackToTop from '@/components/BackToTop';
@@ -86,8 +85,8 @@ export default function MinishellPage() {
               <div>
                 <h3 className="text-lg font-medium text-gray-900 mb-2">Extra</h3>
                 <div className="space-y-2">
-                  <p className="text-gray-600 text-sm">• Quoted directory name support (cd "some folder name")</p>
-                  <p className="text-gray-600 text-sm">• Multi-process piping (chains of up to 64 processes, e.g. echo "5\n3\n2" | sort | uniq)</p>
+                  <p className="text-gray-600 text-sm">• Quoted directory name support (cd &ldquo;some folder name&rdquo;)</p>
+                  <p className="text-gray-600 text-sm">• Multi-process piping (chains of up to 64 processes, e.g. echo &ldquo;5\n3\n2&rdquo; | sort | uniq)</p>
                 </div>
               </div>
             </div>

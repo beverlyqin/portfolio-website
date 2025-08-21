@@ -14,7 +14,7 @@ export default function Home() {
           {/* Left Side - Introduction Text */}
           <div className="space-y-6 self-center">
             <h2 className="text-4xl font-bold text-black mb-6">
-              Hi, I'm Beverly
+              Hi, I&apos;m Beverly
             </h2>
             <div className="space-y-10 text-base leading-relaxed text-gray-600">
               

@@ -27,7 +27,7 @@ export default function Home() {
           {/* Right Side - Image Holder */}
           <div className="flex justify-center lg:justify-end">
             <div className="w-80 h-96 bg-gray-100 relative overflow-hidden">
-              <Image src="/photo2.jpg" alt="Beverly Qin" fill className="object-cover scale-100" priority />
+              <Image src="/photo2.png" alt="Beverly Qin" fill className="object-cover scale-100" priority />
             </div>
           </div>
         </div>

@@ -19,7 +19,7 @@ export default function Home() {
             <div className="space-y-10 text-base leading-relaxed text-gray-600">
               
               <p className="text-xl md:text-xl font-semibold">
-                Passionate about building systems in both physical and digital spaces to enable new forms of interaction, perception, and creativity.
+              I design systems that bridge the digital and physical, drawing from my background in architecture and computer science.
               </p>
             </div>
           </div>

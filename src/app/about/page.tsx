@@ -10,7 +10,7 @@ export default function About() {
       {/* Content Section */}
       <section className="max-w-4xl mx-auto px-8 pb-20">
         
-        
+  
         {/* Photo Section */}
         <div className="flex justify-center mb-4">
           <div className="w-64 h-80 bg-gray-100 relative overflow-hidden rounded-lg">
@@ -20,14 +20,9 @@ export default function About() {
         
         <div className="space-y-8">
           <div className="bg-white p-8 text-center">
-            <div className="max-w-lg mx-auto mb-6">
-              <p className="text-gray-700 leading-relaxed">
-              Master's student in Computer Science at Columbia University with a background in Architecture from Pratt Institute. 
-              </p>
-            </div>
             <p className="text-gray-700 leading-relaxed mb-4 text-lg">
-            I design systems that bridge the digital and physical, drawing from my background in architecture and computer science. I'm especially interested in spatial computing, human–AI interaction, and playful simulations
-            Before shifting into computer science, I trained as an architectural designer at Pratt Institute, where I explored how computational design and interactive technologies can reshape built environments and human experiences.
+            I'm a Master's student in Computer Science at Columbia University. I design systems that bridge the digital and physical, drawing from my background in architecture and computer science. I'm especially interested in spatial computing, human–AI interaction, and playful simulations
+            Before shifting into computer science, I studied architecture at Pratt Institute, where I explored how computational design and interactive technologies can reshape built environments and human experiences.
             </p>
             <p className="text-gray-700 leading-relaxed mb-4 text-lg">
             Outside of work, I enjoy bouldering, traveling, and capturing spaces and cultures through photography.

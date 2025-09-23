@@ -11,6 +11,9 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Beverly Qin - Portfolio",
   description: "Computer Science Portfolio showcasing computation, architecture, and projects",
+  icons: {
+    icon: "/walker1.png",
+  },
 };
 
 export default function RootLayout({

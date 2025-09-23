@@ -19,7 +19,7 @@ export default function About() {
         <div className="space-y-8">
           <div className="bg-white p-8 text-center">
             <p className="text-gray-700 leading-relaxed mb-4 text-lg">
-            I&apos;m a Master&apos;s student in Computer Science at Columbia University. I design systems that bridge the digital and physical, drawing from my background in architecture and computer science. I&apos;m especially interested in spatial computing, human–AI interaction, and playful simulations
+            I&apos;m a Master&apos;s student in Computer Science at Columbia University. I design systems that bridge the digital and physical, drawing from my background in computer science and architecture. I&apos;m especially interested in spatial computing, human–AI interaction, and playful simulations
             Before shifting into computer science, I studied architecture at Pratt Institute, where I explored how computational design and interactive technologies can reshape built environments and human experiences.
             </p>
             <p className="text-gray-700 leading-relaxed mb-4 text-lg">

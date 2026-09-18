@@ -6,8 +6,8 @@ import BackToTop from '@/components/BackToTop';
 
 export default function AlgorithmicWeavingPage() {
   return (
-    <div className="min-h-screen bg-white">
-      <div className="max-w-4xl mx-auto px-6 py-12">
+    <div className="project-page min-h-screen bg-white">
+      <div className="max-w-6xl mx-auto px-6 py-12">
         {/* Back Button */}
         <Link 
           href="/" 

@@ -15,7 +15,7 @@ export default function ProjectNavigation({ currentProjectId }: ProjectNavigatio
 
   return (
     <div className="bg-white border-t border-gray-200 mt-12">
-      <div className="max-w-4xl mx-auto px-6">
+      <div className="max-w-6xl mx-auto px-6">
         <div className="flex items-center justify-between py-8">
           {/* Previous Project */}
           {prevProject ? (

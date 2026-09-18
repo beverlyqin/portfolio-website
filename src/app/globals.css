@@ -16,3 +16,27 @@ body {
   color: var(--foreground);
   font-family: var(--font-proxima-nova), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
+
+/* Shared project-page scale: generous sections make longer case studies easier to scan. */
+.project-page .bg-white.p-8 {
+  padding: clamp(2rem, 3vw, 3rem);
+  margin-bottom: clamp(2rem, 3vw, 3.25rem);
+}
+
+.project-page .text-sm {
+  font-size: 0.975rem;
+  line-height: 1.65;
+}
+
+.project-page .text-xs {
+  font-size: 0.8rem;
+  line-height: 1.55;
+}
+
+.project-page .text-lg {
+  font-size: 1.2rem;
+}
+
+.project-page .text-xl {
+  font-size: 1.4rem;
+}

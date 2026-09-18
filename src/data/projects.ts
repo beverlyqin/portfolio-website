@@ -9,6 +9,22 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    id: "automatic-feature-matching",
+    title: "Automatic Feature Matching Across Images",
+    description: "A computer vision pipeline that detects Harris corners, builds local descriptors, and matches corresponding features between image pairs.",
+    tags: ["Python", "NumPy", "scikit-image", "Computer Vision"],
+    imagePlaceholder: "Project Image",
+    imageSrc: "/automatic-feature-matching/set1_step4_matches.png"
+  },
+  {
+    id: "prokudin-gorskii-alignment",
+    title: "Prokudin-Gorskii Image Alignment",
+    description: "A computer vision pipeline that reconstructs color photographs from three-channel glass plate scans using image alignment and multi-scale search.",
+    tags: ["Python", "NumPy", "scikit-image", "Computer Vision"],
+    imagePlaceholder: "",
+    imageSrc: "/prokudin-gorskii/emir_pyramid_ncc.jpg"
+  },
+  {
     id: "test-prep-platform",
     title: "Personalized Test Prep Insights Platform",
     description: "A reflection data pipeline designed to surface learning patterns, deliver personalized feedback, and guide preparation strategies",

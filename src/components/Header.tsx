@@ -8,16 +8,13 @@ export default function Header() {
   const isActive = (href: string) => pathname === href || pathname.startsWith(href + "/");
 
   return (
-    <header className="pt-30 pb-12">
+    <header className="pt-16 pb-8 sm:pt-20">
       <div className="text-center">
         <Link href="/" className="inline-block">
-          <h1 className="text-3xl font-extrabold tracking-wider text-black mb-12">
-            <span className="block">BEVERLY</span>
-            <span className="block mt-2">QIN</span>
-          </h1>
+          <h1 className="mb-6 whitespace-nowrap text-3xl font-extrabold tracking-wider text-black">BEVERLY QIN</h1>
         </Link>
 
-        <nav className="flex justify-center space-x-24 mb-16">
+        <nav className="mb-10 flex flex-wrap justify-center gap-x-10 gap-y-3 sm:gap-x-14">
           <Link
             href="/"
             className={
@@ -63,4 +60,3 @@ export default function Header() {
     </header>
   );
 }
-

@@ -18,7 +18,7 @@ interface ArchitectureProjectCardProps {
 export default function ArchitectureProjectCard({ project, imageZoom = 1 }: ArchitectureProjectCardProps) {
   const cardContent = (
     <div className="aspect-square bg-white relative overflow-hidden">
-      <div className="w-full h-3/4 bg-white relative overflow-hidden">
+      <div className="w-full h-3/4 bg-white relative overflow-hidden rounded-3xl">
         {project.imageSrc ? (
           <div className="w-full h-full relative overflow-hidden">
             <Image 

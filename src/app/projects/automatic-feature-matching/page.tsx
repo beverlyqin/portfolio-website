@@ -81,7 +81,7 @@ export default function AutomaticFeatureMatchingPage() {
           <div className="space-y-4 leading-relaxed text-gray-600">
             <p>I implemented non-maximal suppression from scratch with nested loops. First, I calculated each corner&apos;s Harris strength and kept the 2,000 strongest candidates to make the subsequent comparisons tractable. Candidates are sorted in descending strength so a strong point suppresses weaker nearby points, rather than the reverse.</p>
             <p>For every retained candidate, the implementation checks whether the absolute x and y differences from another point fall within half the suppression window. A point inside that local neighborhood is suppressed. An initial implementation overwrote the strength variable during iteration, leaving one surviving point; rebuilding the strengths array fixed the issue.</p>
-            <p>I began with a 20-pixel window, which retained too many points. A 40-pixel window produced roughly 480 points in testing; the final visualization run uses an 80-pixel window. AI assistance was used to verify the indexing and half-window comparison during debugging.</p>
+            <p>I began with a 20-pixel window, which retained too many points. A 40-pixel window produced roughly 480 points in testing; the final visualization run uses an 80-pixel window.</p>
           </div>
           <div className="mt-8"><FigureGrid images={imageGroups.suppression} /></div>
         </section>
@@ -107,7 +107,7 @@ export default function AutomaticFeatureMatchingPage() {
           <h2 className="text-xl font-semibold text-gray-900 mb-4">Implementation Notes</h2>
           <div className="space-y-4 leading-relaxed text-gray-600">
             <p>Key failure modes were excessive raw corner counts, an early NMS strengths-array bug, and the cost of comparing every candidate. Pre-filtering candidates before suppression, preserving coordinate order as (y, x), and sorting by response strength made the pipeline both more reliable and practical.</p>
-            <p>AI tools were used to debug NMS indexing and help format visualizations; the detector, suppression, descriptor extraction, SSD matching, and NNDR filtering were implemented and documented in the project code.</p>
+            <p>The detector, suppression, descriptor extraction, SSD matching, and NNDR filtering are implemented and documented in the project code.</p>
           </div>
         </section>
       </div>

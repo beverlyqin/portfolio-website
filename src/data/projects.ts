@@ -9,6 +9,46 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    id: "diffusion-image-editing",
+    title: "Diffusion Image Editing",
+    description: "Image-to-image translation, inpainting, prompt-guided edits, visual anagrams, and hybrid images with DeepFloyd IF.",
+    tags: ["PyTorch", "Diffusion Models", "Image Editing", "Generative AI"],
+    imagePlaceholder: "Project Image",
+    imageSrc: "/diffusion-image-editing-anagram-flip.gif"
+  },
+  {
+    id: "flow-matching",
+    title: "Flow Matching from Scratch",
+    description: "A time- and class-conditioned flow-matching UNet trained from scratch to generate MNIST digits.",
+    tags: ["PyTorch", "UNet", "Flow Matching", "Generative AI"],
+    imagePlaceholder: "Project Image",
+    imageSrc: "/flow-matching/part2_class_samples_epoch10.png"
+  },
+  {
+    id: "diffusion-flow-matching",
+    title: "Diffusion Sampling & Guidance",
+    description: "Generative image experiments with DeepFloyd IF diffusion, denoising, and classifier-free guidance.",
+    tags: ["PyTorch", "Diffusion Models", "DeepFloyd IF", "Generative AI"],
+    imagePlaceholder: "Project Image",
+    imageSrc: "/diffusion-flow-matching/stage2_1_steps5.png"
+  },
+  {
+    id: "neural-radiance-fields",
+    title: "Neural Radiance Fields",
+    description: "Neural fields for 2D image fitting and novel-view synthesis from multi-view images.",
+    tags: ["PyTorch", "NeRF", "Computer Vision", "Neural Rendering"],
+    imagePlaceholder: "Project Image",
+    imageSrc: "/neural-radiance-fields/part2_lego_spherical.gif"
+  },
+  {
+    id: "structure-from-motion",
+    title: "Simple Structure from Motion",
+    description: "A sparse 3D reconstruction pipeline from two images, using SIFT, RANSAC pose estimation, and triangulation.",
+    tags: ["Python", "OpenCV", "SIFT", "3D Vision"],
+    imagePlaceholder: "Project Image",
+    imageSrc: "/structure-from-motion/step5_v1.png"
+  },
+  {
     id: "automatic-feature-matching",
     title: "Automatic Feature Matching Across Images",
     description: "A computer vision pipeline that detects Harris corners, builds local descriptors, and matches corresponding features between image pairs.",
@@ -23,14 +63,6 @@ export const projects: Project[] = [
     tags: ["Python", "NumPy", "scikit-image", "Computer Vision"],
     imagePlaceholder: "",
     imageSrc: "/prokudin-gorskii/emir_pyramid_ncc.jpg"
-  },
-  {
-    id: "test-prep-platform",
-    title: "Personalized Test Prep Insights Platform",
-    description: "A reflection data pipeline designed to surface learning patterns, deliver personalized feedback, and guide preparation strategies",
-    tags: ["React", "REST APIs", "TypeScript", "TanStack Query", "Gemini 2.5 Flash API"],
-    imagePlaceholder: "Project Image",
-    imageSrc: "/mistake.png"
   },
   {
     id: "algorithmic-weaving",

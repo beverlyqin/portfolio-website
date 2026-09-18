@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
+import ScrollReveal from "@/components/ScrollReveal";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -27,7 +28,7 @@ export default function RootLayout({
         className={`${inter.variable} font-proxima antialiased bg-white text-black`}
       >
         <Header />
-        {children}
+        <ScrollReveal>{children}</ScrollReveal>
       </body>
     </html>
   );

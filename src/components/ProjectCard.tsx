@@ -5,12 +5,13 @@ import { Project } from '@/data/projects';
 interface ProjectCardProps {
   project: Project;
   linkToComputation?: boolean;
+  compact?: boolean;
 }
 
-export default function ProjectCard({ project, linkToComputation = false }: ProjectCardProps) {
+export default function ProjectCard({ project, linkToComputation = false, compact = false }: ProjectCardProps) {
   const cardContent = (
-    <article className="group">
-      <div className="aspect-[4/3] bg-neutral-100 relative overflow-hidden">
+    <article className={`group ${compact ? 'w-72 flex-none sm:w-80' : ''}`}>
+      <div className="aspect-[4/3] bg-neutral-100 relative overflow-hidden rounded-3xl">
         {project.imageSrc ? (
           project.id === "vr-simulation" ? (
             <video 
@@ -35,22 +36,24 @@ export default function ProjectCard({ project, linkToComputation = false }: Proj
           </div>
         )}
       </div>
-      <div className="pt-4 grid grid-cols-[1fr_auto] gap-x-4 items-start">
+      <div className={`${compact ? 'px-1 pt-3' : 'grid grid-cols-[1fr_auto] items-start gap-x-4 pt-4'}`}>
         <h3 className="text-lg font-semibold text-black leading-tight">{project.title}</h3>
-        <span className="text-xs text-gray-400 pt-0.5">↗</span>
-        <p className="col-span-2 text-gray-600 text-sm leading-relaxed mt-2">
+        {!compact && <span className="pt-0.5 text-xs text-gray-400">↗</span>}
+        <p className={`${compact ? 'mt-1 line-clamp-2 text-sm leading-relaxed text-gray-600' : 'col-span-2 mt-2 text-sm leading-relaxed text-gray-600'}`}>
           {project.description}
         </p>
-        <div className="col-span-2 mt-3 flex flex-wrap gap-1.5">
-          {project.tags.slice(0, 3).map((tag, index) => (
-            <span 
-              key={index}
-              className="px-1.5 py-0.5 text-xs font-medium text-gray-700 bg-gray-100 border border-gray-200 rounded-full"
-            >
-              {tag}
-            </span>
-          ))}
-        </div>
+        {!compact && (
+          <div className="col-span-2 mt-3 flex flex-wrap gap-1.5">
+            {project.tags.slice(0, 3).map((tag, index) => (
+              <span 
+                key={index}
+                className="px-1.5 py-0.5 text-xs font-medium text-gray-700 bg-gray-100 border border-gray-200 rounded-full"
+              >
+                {tag}
+              </span>
+            ))}
+          </div>
+        )}
       </div>
     </article>
   );

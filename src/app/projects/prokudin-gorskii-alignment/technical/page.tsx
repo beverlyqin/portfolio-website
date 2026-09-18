@@ -112,7 +112,7 @@ export function ProkudinGorskiiTechnicalReport() {
           <div className="space-y-4 leading-relaxed text-gray-600">
             <p>Large low-detail areas and repetitive patterns can yield a deceptively good score for the wrong displacement. Interior cropping, a bounded search window, and edge maps reduce this failure mode.</p>
             <p>The first pyramid implementation failed because the border crop was too large—sometimes 70–80 pixels per side—and the search parameters were too narrow. Reducing the crop to 5–10 pixels, increasing the coarse search from ±30 to ±40, increasing local refinement from ±5 to ±8, and lowering the pyramid cutoff from 250 to 200 pixels improved convergence.</p>
-            <p><strong className="text-gray-900">Implementation note:</strong> AI assistance was used while debugging the initial pyramid behavior and tuning these parameters. <Code>three_generations.tif</Code> could not be processed in the batch run and had to be run individually.</p>
+            <p><strong className="text-gray-900">Implementation note:</strong> <Code>three_generations.tif</Code> could not be processed in the batch run and had to be run individually.</p>
           </div>
           <p className="mt-6 text-xs leading-relaxed text-gray-500">The report references cathedral, lugano, and three_generations outputs, but their image files are not present in the local <Code>web/assets</Code> folder. This page displays every available local result image.</p>
         </section>
